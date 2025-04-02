@@ -1,1 +1,37 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess.com Review Bypass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chess.com Review Bypass</h1>
+        <p>Paste your Chess.com game link to get full engine analysis without premium</p>
+        
+        <div class="input-group">
+            <input type="text" id="gameUrl" placeholder="https://www.chess.com/game/live/1234567890">
+            <button id="analyzeBtn">Let the Engine Cook!</button>
+        </div>
+        
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Cooking up some analysis...</p>
+        </div>
+        
+        <div id="result" class="hidden">
+            <iframe id="analysisFrame" frameborder="0"></iframe>
+            <p class="hint">Pro tip: Use the arrow keys to navigate through the game</p>
+        </div>
+        
+        <div id="error" class="hidden">
+            <p>Something went wrong. Please check your link and try again.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+              </html>
